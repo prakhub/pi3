@@ -1,0 +1,12 @@
+# Stores metadata about a measurement
+
+# corner points for perspective transform
+self.points = np.float32( [[171,40],[409,49],[157,278],[407,286]])
+# frame number where movement starts
+self.cutFrames =  [25,-1]
+# distance from where the screen moved
+self.distance = [0,330]
+self.color=0
+self.max_threshold=255
+self.min_threshold=150
+self.offset = 100

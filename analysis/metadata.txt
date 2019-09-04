@@ -1,0 +1,27 @@
+# Stores metadata about a measurement
+# Example file used in the main cyclotron measurements.
+
+# Corner points for perspective transform, in px
+self.points = np.float32( [[159,57],[412,64],[153,310],[417,306]])
+
+# Frame number where movement starts
+self.cutFrames =  [34,1098]
+
+# Distance from where the screen moved in mm
+self.distance = [0,660]
+
+# Color to extract in preprocessing in BGR order
+self.color=0
+
+# Parts of the image above this threshold will be cut off
+self.max_threshold=255
+
+# Parts of the image below this threshold will be cut off
+self.min_threshold=0
+
+# Padding of the image in px
+self.offset = 120
+
+# Radius of the cirular mask in px
+self.radius = 300
+
